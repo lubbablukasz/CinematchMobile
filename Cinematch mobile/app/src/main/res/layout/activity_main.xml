@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg_android_app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:background="@drawable/white_fill"
+        android:padding="10dp"
+        android:entries="@array/language_options"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_margin="16dp"
+        android:background="@drawable/door"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="48dp">
+
+        <Button
+            android:id="@+id/buttonOpenContacts"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tiles"
+            android:text="@string/contacts_button"
+            android:textSize="28dp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/buttonOpenPairs"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tiles"
+            android:text="@string/pairs_button"
+            android:textSize="28dp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/buttonOpenMap"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tiles"
+            android:text="Map"
+            android:textSize="28dp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/buttonOpenStats"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tiles"
+            android:text="Stats"
+            android:textSize="28dp"
+            app:backgroundTint="@null" />
+
+        <Button
+            android:id="@+id/buttonOpenMeetings"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/tiles"
+            android:text="Meetings"
+            android:textSize="28dp"
+            app:backgroundTint="@null" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

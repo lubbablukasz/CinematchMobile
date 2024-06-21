@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Dating App</string>
+    <string name="contacts_button">Contacts</string>
+    <string name="pairs_button">Pairs</string>
+</resources>

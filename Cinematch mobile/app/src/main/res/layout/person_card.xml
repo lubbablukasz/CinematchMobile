@@ -1,0 +1,84 @@
+<!-- person_card.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_border"
+    android:padding="16dp">
+
+    <!-- Image of the person -->
+    <ImageView
+        android:id="@+id/imageViewPerson"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@color/colorAccent"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Person's name -->
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewPerson"
+        android:text="Name"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="24sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Person's age -->
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewName"
+        android:text="Age"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Person's gender -->
+    <TextView
+        android:id="@+id/textViewGender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAge"
+        android:text="Gender"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Person's description -->
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGender"
+        android:text="Description"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Like button -->
+    <Button
+        android:id="@+id/buttonLike"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescription"
+        android:text="Like"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Decline button -->
+    <Button
+        android:id="@+id/buttonDecline"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDescription"
+        android:text="Decline"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
